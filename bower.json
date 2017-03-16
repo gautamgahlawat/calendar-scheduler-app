@@ -1,0 +1,25 @@
+{
+  "name": "calendar-scheduler-app",
+  "homepage": "https://github.com/gautamgahlawat/calendar-scheduler-app",
+  "description": "It is a Calendar Event Scheduler App",
+  "main": "index.html",
+  "keywords": [
+    "scheduler",
+    "events",
+    "calendar"
+  ],
+  "authors": [
+    "Gautam Gahlawat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-calendar": "^1.0.2"
+  }
+}
