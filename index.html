@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='Myapp'>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Free Web tutorials">
@@ -7,24 +7,35 @@
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar | Scheduler</title>
-</head>
 
-<body ng-app="Myapp">
-    <div ng-controller="MainController"></div>
+    <!-- link -->
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css">
 
-
-
-
+    <!-- ******Scripts******* -->
 
     <!-- jQuery -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- fullcalendar -->
-    <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
-    <!-- angular-ui-calendar -->
-    <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
-    <!-- angualr -->
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <!-- moment -->
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <!-- angualr -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <!-- angular-ui-calendar -->
+    <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <!-- fullcalendar -->
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+</head>
+
+<body>
+    <div ng-controller="MainController">
+        <div class="calendar" ui-calendar="uiConfig.calender" ng-model="eventSources">
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+
 </body>
 </html>
