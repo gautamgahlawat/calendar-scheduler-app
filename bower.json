@@ -20,6 +20,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular-ui-calendar": "^1.0.2"
+    "angular-ui-calendar": "^1.0.2",
+    "bootstrap": "^3.3.7",
+    "jquery-ui": "^1.12.1",
+    "angular-bootstrap": "^2.5.0",
+    "angular-ui-router": "^0.4.2",
+    "jqueryui-timepicker-addon": "^1.6.3"
   }
 }
