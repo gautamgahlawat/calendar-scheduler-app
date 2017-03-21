@@ -18,7 +18,7 @@ Checkout the live version  [here](https://gautamgahlawat.github.io/calendar-sche
 
 1. Download all the files from [here](https://github.com/gautamgahlawat/calendar-scheduler-app/archive/master.zip)
 2. Unzip the file, open the dist folder and open the index.html in your browser and all the original filesare in src folder
-3. Open the terminal and change the directory to projects directory. Run command `bower installj`
+3. Open the terminal and change the directory to projects directory. Run command `bower install`
 4. It will install all the dependencies mentioned in bower.json file.
 5. Open index.html from the root.
 
