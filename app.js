@@ -46,35 +46,24 @@ app.controller('MainController',['$scope', '$compile', 'uiCalendarConfig', funct
     };
 
 
-    $scope.newEvent = function(event) {
-        //alert("Add new called!");
-        //var test = $scope.input;
-        //$scope.events.push({"title": "testEvent", "start": new Date(), "end": new Date(), "allDay":false});
-        //event.start = moment(event.start).format("MM/DD/YYYY HH:mm a");
-        //event.start = moment(event.end).format("MM/DD/YYYY HH:mm a");
-
-        $scope.curent = {};
-    };
     $scope.curent = {};
 
+// For removing the current event
     $scope.removeEvent = function(event) {
         var index = $scope.events.indexOf(event);
         if(confirm("Remove this Event ?") === true) {
             $scope.events.splice(index, 1);
         }
-
     };
 
     $scope.editPencil   = true;
 
+//set the the selected event to current editable
     $scope.editEvent = function(event) {
         $scope.current = event;
     };
 
-    $scope.completeEvent = function(event) {
-
-    };
-
+// Save the current event to the calendar and clear the form
     $scope.saveEvent = function(event) {
         $scope.events.push(event);
         $scope.current = {};
