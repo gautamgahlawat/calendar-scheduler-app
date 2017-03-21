@@ -23,6 +23,7 @@ ul.events-list {
     padding: 10px 10px 20px 10px;
     border: 2px solid #6B6B6B;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .event-title {
@@ -35,10 +36,15 @@ ul.events-list {
     padding: 15px;
 }
 
+.edit {
+    padding: 0 8px 5px 8px;
+}
+
 .single-event {
     background-color: #B9F6FF;
     border-radius: 8px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .event-item {

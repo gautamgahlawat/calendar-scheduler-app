@@ -16,12 +16,8 @@ app.controller('MainController',['$scope', '$compile', 'uiCalendarConfig', funct
     };
 
     $scope.events = [
-      { title: 'All Day Event', start: new Date(y, m, 1)},
-      { title: 'Long Event', start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
-      { title: 'Repeating Event', start: new Date(y, m, d - 3, 16, 0),allDay: false},
-      { title: 'Repeating Event', start: new Date(y, m, d + 4, 16, 0),allDay: false},
-      { title: 'Birthday Party', start: new Date(y, m, d + 1, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: true},
-      { title: 'Click for Google', start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
+      { title: "All Day Event test", start: "03/08/2017 12:00 am",end:"03/08/2017 05:30 pm"},
+      { title: 'Long Event test', start: "03/16/2017 12:30 am",end: "03/18/2017 06:00 pm"},
     ];
 
     //$scope.events.start=moment(start).format('MM/DD/YYYY hh:mm a');
@@ -69,8 +65,14 @@ app.controller('MainController',['$scope', '$compile', 'uiCalendarConfig', funct
 
     };
 
+    $scope.editPencil   = true;
+
     $scope.editEvent = function(event) {
         $scope.current = event;
+    };
+
+    $scope.completeEvent = function(event) {
+
     };
 
     $scope.saveEvent = function(event) {

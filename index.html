@@ -40,6 +40,7 @@
                     timeFormat: "hh:mm tt"
                 });
             });
+
         });
     </script>
 
@@ -162,18 +163,26 @@
                                             <button ng-click="saveEvent(current)" type="button" class="btn btn-info">Save</button>
                                         </li>
                                     </div>
-
+                                    <hr>
                                     <!-- ************Event List*********** -->
                                     <div class="events-list">
                                         <li ng-repeat="event in events">
                                             <div class="single-event">
-                                                <div class="event-item">
+                                                <div class="event-item" ng-style="myStyle">
                                                     <a href="#" ng-click="removeEvent(event)" class="pull-right"><span class="glyphicon glyphicon-remove"></span></a>
                                                     <b><p type="text" ng-model="event.title" class="ng-valid ng-dirty"></p>{{event.title}}<p></b>
                                                 </div>
-                                                <a href="#" ng-click="editEvent(event)" type="button" class="btn btn-xs btn-warning
-    "><span class="glyphicon glyphicon-cog" title="edit"></span></a> <br>
                                                 {{event.start}} - {{event.end}}
+                                                <div class="edit">
+                                                    <a href="#" ng-click="editEvent(event)" type="button" class="btn btn-xs btn-warning edit-btn" ng-show="editPencil"><span class="glyphicon glyphicon-pencil" id="edit" title="edit"></span></a>
+
+                                                    <a href="#" ng-click="editPencil = !editPencil; myStyle={background:'#68F158'}" ng-show="editPencil" class="pull-right" id="complete"><span class="glyphicon glyphicon-ok"></span></a>
+                                                </div>
+
+                                                <div class="finished">
+
+                                                </div>
+
                                                 <!--<button ng-click="saveEvent(current)" type="button" class="btn btn-info">Save</button>-->
                                             </div>
                                         </li>
